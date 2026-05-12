@@ -1,0 +1,13 @@
+
+> ubj-app@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.3
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 2s
+ ○ Compiling / ...
+ ✓ Compiled / in 9.8s (1439 modules)
+ ✓ Compiled in 1124ms (695 modules)
+ GET / 200 in 10944ms
