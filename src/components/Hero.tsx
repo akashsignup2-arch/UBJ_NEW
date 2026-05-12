@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-nature-900 via-transparent to-black/30 z-10" />
         <div
           className="absolute inset-0 bg-cover bg-center animate-slow-drift"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=2000&auto=format&fit=crop')" }}
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1593693411515-c20261bcad6e?q=80&w=2000&auto=format&fit=crop')" }}
         />
       </motion.div>
 
@@ -48,7 +48,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl text-white max-w-5xl leading-tight md:leading-[1.1] mb-8 text-shadow"
+          className="font-serif text-5xl md:text-7xl lg:text-8xl text-white max-w-5xl leading-tight md:leading-[1.1] mb-8 drop-shadow-lg"
         >
           Drift Through Kerala’s <br className="hidden md:block"/>
           <span className="italic text-wood-100">Timeless</span> Backwaters
@@ -58,7 +58,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-          className="text-wood-50 text-lg md:text-xl max-w-2xl font-light leading-relaxed mb-12 text-shadow-sm"
+          className="text-wood-50 text-lg md:text-xl max-w-2xl font-light leading-relaxed mb-12 drop-shadow-md"
         >
           A premium family-run houseboat experience. Slow living, authentic hospitality, and private immersion in nature.
         </motion.p>

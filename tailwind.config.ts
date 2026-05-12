@@ -56,7 +56,7 @@ const config: Config = {
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
-        'slow-drift': 'drift 20s linear infinite',
+        'slow-drift': 'drift 120s linear infinite',
       },
       keyframes: {
         float: {
@@ -70,6 +70,19 @@ const config: Config = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }: any) {
+      const newUtilities = {
+        ".hide-scrollbar": {
+          "-ms-overflow-style": "none",
+          "scrollbar-width": "none",
+        },
+        ".hide-scrollbar::-webkit-scrollbar": {
+          display: "none",
+        },
+      };
+      addUtilities(newUtilities);
+    }
+  ],
 };
 export default config;
