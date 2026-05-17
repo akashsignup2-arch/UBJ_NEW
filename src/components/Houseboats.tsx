@@ -57,13 +57,13 @@ export default function Houseboats() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8 }}
-              className={`flex flex-col lg:flex-row gap-12 lg:gap-20 items-center ${
+              className={`bg-white rounded-[3rem] p-8 md:p-12 shadow-2xl shadow-black/5 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center ${
                 index % 2 !== 0 ? "lg:flex-row-reverse" : ""
               }`}
             >
               {/* Image side */}
               <div className="w-full lg:w-1/2">
-                <div className="relative aspect-[4/3] overflow-hidden group">
+                <div className="relative aspect-[4/3] overflow-hidden group rounded-[2rem]">
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
                   <img
                     src={boat.image}
